@@ -4,6 +4,7 @@ import Divider from '@material-ui/core/Divider';
 import FadeIn from 'react-fade-in';
 import AppBar from './AppBar';
 import Demo from './Demo';
+import Templates from './Templates';
 import Footer from './Footer';
 
 function App() {
