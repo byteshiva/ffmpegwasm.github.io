@@ -75,9 +75,6 @@ function Demo() {
       <Typography align="center" variant="h4">
         Demo
       </Typography>
-      <Typography className={classes.para} align="center" variant="h6">
-        Try ffmpeg.wasm now!
-      </Typography>
       {
         !IS_COMPATIBLE ? (
           <>
@@ -98,9 +95,9 @@ function Demo() {
               <LivePreview />
               <Grid container justify="space-between" alignItems="flex-end">
                 <Grid item>
-                  <Typography>
-                    Edit the code block below to test your scenario (<Link href={TESTDATA_URL} target="_blank" rel="noopener" color="secondary">Download Sample Video/Audio</Link>):
-                  </Typography>
+//                   <Typography>
+//                     Edit the code block below to test your scenario (<Link href={TESTDATA_URL} target="_blank" rel="noopener" color="secondary">Download Sample Video/Audio</Link>):
+//                   </Typography>
                 </Grid>
                 <Grid item>
                   <InputLabel id="config-select-label">Choose a sample config</InputLabel>
@@ -116,8 +113,8 @@ function Demo() {
                   </Select>
                 </Grid>
               </Grid>
-              <LiveEditor style={{ fontSize: 18, marginTop: 8 }}/>
-              <LiveError />
+//               <LiveEditor style={{ fontSize: 18, marginTop: 8 }}/>
+//               <LiveError />
             </LiveProvider>
           </>
         )
