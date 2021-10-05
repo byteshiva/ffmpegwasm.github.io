@@ -95,11 +95,6 @@ function Demo() {
               <LivePreview />
               <Grid container justify="space-between" alignItems="flex-end">
                 <Grid item>
-//                   <Typography>
-//                     Edit the code block below to test your scenario (<Link href={TESTDATA_URL} target="_blank" rel="noopener" color="secondary">Download Sample Video/Audio</Link>):
-//                   </Typography>
-                </Grid>
-                <Grid item>
                   <InputLabel id="config-select-label">Choose a sample config</InputLabel>
                   <Select
                     labelId="config-select-label"
@@ -113,8 +108,6 @@ function Demo() {
                   </Select>
                 </Grid>
               </Grid>
-//               <LiveEditor style={{ fontSize: 18, marginTop: 8 }}/>
-//               <LiveError />
             </LiveProvider>
           </>
         )
