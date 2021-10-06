@@ -81,9 +81,9 @@ function FFmpeg({ args, inFilename, outFilename, mediaType }) {
   });
   const onFileUploaded = async ({ target: { files } }) => {
     const file = new Uint8Array(await readFromBlobOrFile(files[0]));
-    setMessage('Loading FFmpeg.wasm');
+    setMessage('Loading please wait');
     if (!ffmpeg.isLoaded()) {
-      setMessage('Loading ffmpeg.wasm-core, may take few minutes');
+      setMessage('Loading engine core, may take few minutes');
       await ffmpeg.load();
     }
     ffmpeg.FS('writeFile', inFilename, await fetchFile(file));
@@ -122,11 +122,6 @@ function FFmpeg({ args, inFilename, outFilename, mediaType }) {
             />
           </Button>
         )}
-      </Grid>
-      <Grid item>
-        <Typography align="center">
-          {`$ ffmpeg ${args.join(' ')}`}
-        </Typography>
       </Grid>
       <Grid item>
         <Typography align="center">
