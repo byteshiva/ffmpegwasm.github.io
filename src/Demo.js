@@ -99,9 +99,9 @@ function Demo() {
                     value={config}
                     onChange={onConfigChanged}
                   >
+                    <MenuItem value="lame">lame (mp3)</MenuItem>
                     <MenuItem value="x264">x264 (mp4)</MenuItem>
                     <MenuItem value="libvpx">libvpx (webm)</MenuItem>
-                    <MenuItem value="lame">lame (mp3)</MenuItem>
                   </Select>
                 </Grid>
               </Grid>
