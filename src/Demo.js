@@ -62,7 +62,7 @@ const useStyles = makeStyles({
 
 function Demo() {
   const classes = useStyles();
-  const [config, setConfig] = useState('x264');
+  const [config, setConfig] = useState('lame');
   const onConfigChanged = (evt) => {
     setConfig(evt.target.value);
   };
