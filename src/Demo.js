@@ -76,7 +76,7 @@ function Demo() {
         !IS_COMPATIBLE ? (
           <>
             <Typography align="center" variant="h6">
-              Your browser doesn't support SharedArrayBuffer, thus ffmpeg.wasm cannot execute. Please use latest version of Chromium or any other browser supports SharedArrayBuffer.
+              Your browser doesn't support SharedArrayBuffer, thus engine core cannot execute. Please use latest version of Chromium or any other browser supports SharedArrayBuffer.
             </Typography>
           </>
         ) : (
